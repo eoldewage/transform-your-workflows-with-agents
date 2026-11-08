@@ -3,7 +3,7 @@
 % Move into the folder for this exercise.
 scriptFile = matlab.desktop.editor.getActiveFilename;
 scriptDir = fileparts(scriptFile);
-cd(fullfile(scriptDir,"task2-using-agents-start"))
+cd(fullfile(scriptDir,"start-here"))
 %%
 %[text] Open a terminal and start Codex
 % Open a Terminal in MATLAB.
