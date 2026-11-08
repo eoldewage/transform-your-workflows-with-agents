@@ -1,0 +1,69 @@
+##Task - Intro
+
+- Look at MATLAB 
+
+- Launch the terminal and start codex
+
+- Run starter plot
+
+- Talk about context and models
+
+- Change model to low
+
+- AGENTS.md
+
+##Task - Running and changing code (importMarketData)
+
+Tell me about the project in this directory
+
+Please run the entry script
+
+Please update the code to compare the UK FTSE with Asian index returns
+
+	-> Try updating to other indices. Is it following a consistent approach every time?
+
+Refactor the @importMarketData.m script into a clean, reusable function.
+
+	-> Inspect the resulting function. Is it general purpose? What should change? What else changed?
+	
+	-> Give the agent instructions to improve the refactor and try again.
+
+- The importMarketData.m function allows specifying different data files, but I want to be able to call the function and specify different indices by name. The function should return returns, dates and series names for the specified indices.
+
+- It is a function, but I'm unable to specify any arguments. I want to be able to specify alternative data source files (though it should default to the ones in there now). And I want to be able to call the function and specify different indices by name. The function should return returns, dates and series names for the specified indices.
+	
+	-> How could we have done better here?
+	-> It didn't quite understand what we wanted. It's clean and modular, but it didn't understand our intent so it couldn't fulfill the reusability requirement.
+	
+What did you learn from that course correction?
+
+Update AGENTS.md to reflect this learning in a way that's generally applicable going forward.
+
+## Task - approaching-refactors
+
+- Open analyzeTailRisk and mention some of the code smells.
+
+/plan Add tests for analyzeTailRisk to establish a baseline of the current behaviour testing both the happy (obvious) path and edge cases. Plan out the cases we should use step by step, including a summary as part of the plan.
+
+- Look at the test - is it a good test?
+
+Please analyze the @analyzeTailRisk file in this repo for quality and maintainability issues. Flag any code smells. Don't change anything yet, but make recommendations for improvement
+	
+/plan Please plan out how the top three recommendations should be implemented, in slices for large chunks of work. After each slice of work, first verify correctness by running the regression tests before continuing to the next slice.
+
+- Note: I could have had an agent analyze for code smells. BUT I don't want that same agent to write the regression tests. 
+
+# Task - Big refactor
+
+Please make this project into a proper Matlab project (so that the project does path management for us). Also initialize a git repository here and add instructions to agents.md to use it for version control. Commit after every change is verified, but do not push or make any changes to remote without explicit user permission. 
+Also add instructions to follow proper test-driven development principles, with red/green states. Prioritize the targeted test before running the whole suite.
+
+/plan Apart from the entry point script, the other scripts should be converted into reusable, modular functions. Please plan this out step by step, with a slice of work for each function. In each case, add a quick regression test for the script that uses simulated data to capture existing behaviour and detect divergence from the current behaviour. Include writing the plan to file for future reference as the first step.
+
+
+## Task - Build an app
+
+/clear
+
+/plan Please build a MATLAB app (as a .m file) to help the user visualize the different market data inputs and their simulated returns. THe user should be able to choose between different indices in Data_GLobalIdx1.mat and the Asian Index returns. The app should plot everything as in plotRiskResults, but side by side, contingent on the user-chosen data. Plan this out step by step, asking me for anything that's unclear. Include writing the plan to file for future reference as the first step.
+

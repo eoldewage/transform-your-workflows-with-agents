@@ -1,0 +1,5 @@
+name = "Market Risk Analysis"
+
+[folders]
+path = ["."]
+test = ["tests"]
