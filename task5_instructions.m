@@ -1,6 +1,10 @@
 %[text] # Agentic AI Workflow: Task 5 - Build an app
 %[text] In this exercise, we use an agent to plan and build a MATLAB app for visualizing market data inputs and simulated returns.
-%[text] Continue where we left off or copy the Task 3 solution from the solutions folder and continue from there.
+%[text] Continue where we left off or copy the Task 3 solution from the solutions folder and continue from there.  **If you are in a different folder to the "start-here" folder, open that folder instead of running the code block below.**
+% Move into the folder for this exercise.
+scriptFile = matlab.desktop.editor.getActiveFilename;
+scriptDir = fileparts(scriptFile);
+cd(fullfile(scriptDir,"start-here"))
 %%
 %[text] ### Step 1: Open a terminal and start Codex
 myTerminal = terminal(Theme="dark",StartupCommand="codex");

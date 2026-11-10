@@ -1,8 +1,13 @@
 %[text] # Agentic AI Workflow: Task 4 - Big refactor
 %[text] In this exercise, we use an agent to turn the market-risk analysis into a properly managed MATLAB project and we plan a test-driven modular refactor.
-%[text] Continue your project where you left off, or copy the Task 3 solution from the solutions folder and continue from there.
+%[text] Continue your project where you left off, or copy the Task 3 solution from the solutions folder and continue from there. **If you are in a different folder to the "start-here" folder, open that folder instead of running the code block below.**
+% Move into the folder for this exercise.
+scriptFile = matlab.desktop.editor.getActiveFilename;
+scriptDir = fileparts(scriptFile);
+cd(fullfile(scriptDir,"start-here"))
 %%
 %[text] ### Step 1: Open a terminal and start Codex
+%[text] Or you can type `/clear` to reuse the terminal that you already have open.
 myTerminal = terminal(Theme="dark",StartupCommand="codex");
 %%
 %[text] ### Step 2: Set up the project, version control, and testing rules
